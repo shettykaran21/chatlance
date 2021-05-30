@@ -1,5 +1,5 @@
-import LoginCard from '../components/Login/LoginCard';
-import styles from '../styles/Login.module.css';
+import LoginCard from 'components/Login/LoginCard';
+import styles from 'styles/Login.module.css';
 
 const Login = () => {
   return (

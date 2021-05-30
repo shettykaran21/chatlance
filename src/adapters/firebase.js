@@ -1,7 +1,7 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
 
-export const authentication = firebase
+export const auth = firebase
   .initializeApp({
     apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     authDomain: 'chatlance-62de9.firebaseapp.com',
