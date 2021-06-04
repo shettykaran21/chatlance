@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div>
       <div className={styles.logo}>Chatlance</div>
-      <div className={styles.logout} onCLick={handleLogout}>
+      <div className={styles.logout} onClick={handleLogout}>
         Logout
       </div>
     </div>

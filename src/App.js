@@ -6,20 +6,18 @@ import { AuthProvider } from 'contexts/AuthContext';
 
 const App = () => {
   return (
-    <div>
-      <Router>
-        <AuthProvider>
-          <Switch>
-            <Route exact path="/">
-              <Login />
-            </Route>
-            <Route path="/chats">
-              <Chats />
-            </Route>
-          </Switch>
-        </AuthProvider>
-      </Router>
-    </div>
+    <Router>
+      <AuthProvider>
+        <Switch>
+          <Route exact path="/">
+            <Login />
+          </Route>
+          <Route path="/chats">
+            <Chats />
+          </Route>
+        </Switch>
+      </AuthProvider>
+    </Router>
   );
 };
 

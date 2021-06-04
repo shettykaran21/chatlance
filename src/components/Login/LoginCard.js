@@ -1,5 +1,6 @@
 import firebase from 'firebase/app';
 import { FaGoogle, FaFacebook } from 'react-icons/fa';
+import 'firebase/app';
 
 import styles from 'styles/Login.module.css';
 import { auth } from 'adapters/firebase';

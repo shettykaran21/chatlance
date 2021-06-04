@@ -14,13 +14,18 @@ export const AuthProvider = ({ children }) => {
     auth.onAuthStateChanged((user) => {
       setUser(user);
       setIsLoading(false);
-      user && history.push('/chats');
+      if (user) {
+        history.push('/chats');
+      }
     });
   }, [user, history]);
 
+  const value = { user };
+
   return (
-    <AuthContext.Provider value={user}>
+    <AuthContext.Provider value={value}>
       {!isLoading && children}
+      {isLoading && 'Loading...'}
     </AuthContext.Provider>
   );
 };

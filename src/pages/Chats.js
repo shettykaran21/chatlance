@@ -1,8 +1,12 @@
 import { ChatEngine } from 'react-chat-engine';
 
 import Navbar from 'components/Layout/Navbar';
+import useAuth from 'hooks/useAuth';
 
 const Chats = () => {
+  const { user } = useAuth();
+  console.log(user);
+
   return (
     <div>
       <Navbar />
