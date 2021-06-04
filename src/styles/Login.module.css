@@ -2,7 +2,7 @@
   height: 100vh;
   background: linear-gradient(
     to right bottom,
-    var(--color-primary-blue),
+    var(--color-blue),
     hsl(234, 24%, 35%)
   );
   display: flex;
@@ -19,7 +19,7 @@
 .card {
   height: 20rem;
   width: 35rem;
-  background-color: var(--color-secondary-blue-2);
+  background-color: var(--color-blue-2);
   border-radius: 1rem;
   box-shadow: 0px 8px 24px rgba(49, 51, 53, 0.3);
   display: flex;
@@ -50,5 +50,5 @@
 }
 
 .btn:active {
-  transform: translateY(0px);
+  transform: translateY(3px);
 }

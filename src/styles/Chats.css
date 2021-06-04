@@ -1,0 +1,109 @@
+/* Chat list */
+.ce-chat-list {
+  background-color: var(--color-blue) !important;
+  font-family: inherit !important;
+  color: var(--color-white) !important;
+  padding: 0 1rem !important;
+  border: var(--border-blue) !important;
+}
+
+.ce-chats-container {
+  background-color: var(--color-blue) !important;
+}
+
+.ce-chat-form-container {
+  background-color: var(--color-blue) !important;
+  margin-bottom: 2rem;
+}
+
+.ce-chat-card {
+  background-color: var(--color-blue-2) !important;
+  border: none !important;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.ce-active-chat-card {
+  background-color: var(--color-blue-light) !important;
+}
+
+.ce-chat-subtitle-message {
+  color: var(--color-white-2) !important;
+}
+
+/* Chat feed */
+.ce-chat-feed {
+  background-color: var(--color-blue) !important;
+}
+.ce-chat-feed-container {
+  background-color: var(--color-blue) !important;
+  padding: 0 1rem !important;
+}
+
+.ce-chat-title-container {
+  background-color: var(--color-blue) !important;
+  color: var(--color-white);
+}
+
+.ce-their-message-sender {
+  color: var(--color-white) !important;
+}
+
+.ce-message-date-text {
+  color: var(--color-white) !important;
+}
+
+.ce-message-form-container {
+  background-color: var(--color-blue-3) !important;
+  color: var(--color-white);
+  font-family: 'Open Sans' !important;
+  z-index: 999;
+}
+
+.ce-my-message-bubble {
+  background-color: var(--color-blue-light) !important;
+}
+
+.ce-their-message-bubble {
+  background-color: var(--color-blue-2) !important;
+  color: var(--color-white) !important;
+}
+
+.ql-container,
+.ql-toolbar {
+  border: var(--border-blue) !important;
+}
+
+.ql-toolbar svg {
+  fill: var(--color-white-2);
+}
+
+.ql-stroke {
+  stroke: var(--color-white-2) !important;
+}
+
+/* Chat settings */
+.ce-settings {
+  background-color: var(--color-blue) !important;
+  color: var(--color-white);
+  border: var(--border-blue) !important;
+  font-family: inherit !important;
+}
+
+.ce-settings div {
+  border: none !important;
+}
+
+.ce-input {
+  background-color: var(--color-blue-light);
+  color: var(--color-white);
+  margin: 2rem 0;
+}
+
+.ce-section-title-container {
+  transition: 0.2s ease-in;
+}
+
+.ce-section-title-container:hover {
+  background-color: red !important;
+}

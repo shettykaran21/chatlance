@@ -7,4 +7,6 @@ export const Button = styled.button`
   border-radius: 1rem;
   border: none;
   cursor: pointer;
+  color: var(--color-white);
+  background-color: var(--color-blue-light);
 `;

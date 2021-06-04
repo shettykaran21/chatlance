@@ -1,10 +1,12 @@
-import { ChatEngine } from 'react-chat-engine';
 import axios from 'axios';
+import { useEffect, useState } from 'react';
+import { useHistory } from 'react-router';
+import { ChatEngine } from 'react-chat-engine';
 
 import Navbar from 'components/Layout/Navbar';
 import useAuth from 'hooks/useAuth';
-import { useEffect, useState } from 'react';
-import { useHistory } from 'react-router';
+import styles from 'styles/Chats.module.css';
+import 'styles/Chats.css';
 
 const Chats = () => {
   const { user } = useAuth();
@@ -12,7 +14,7 @@ const Chats = () => {
   const history = useHistory();
 
   const getImageFile = async (url) => {
-    const response = await fetch(url);
+    const response = await axios.get(url);
     const data = await response.blob();
 
     return new File([data], 'user.jpg', { type: 'image/jpeg' });
@@ -59,16 +61,18 @@ const Chats = () => {
   });
 
   return (
-    <div>
+    <>
       <Navbar />
       {isLoading || (!user && <div>Loading...</div>)}
-      <ChatEngine
-        height="calc(100vh - 66px)"
-        projectID={process.env.REACT_APP_CHAT_ENGINE_PROJECT_ID}
-        userName={user?.email}
-        userSecret={user?.uid}
-      />
-    </div>
+      <div className={styles.chats}>
+        <ChatEngine
+          height="calc(100vh - 66px)"
+          projectID={process.env.REACT_APP_CHAT_ENGINE_PROJECT_ID}
+          userName={user?.email}
+          userSecret={user?.uid}
+        />
+      </div>
+    </>
   );
 };
 
