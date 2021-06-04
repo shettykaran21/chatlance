@@ -3,7 +3,7 @@
   background-color: var(--color-blue) !important;
   font-family: inherit !important;
   color: var(--color-white) !important;
-  padding: 0 1rem !important;
+  padding: 1rem !important;
   border: var(--border-blue) !important;
 }
 
@@ -98,12 +98,45 @@
   background-color: var(--color-blue-light);
   color: var(--color-white);
   margin: 2rem 0;
+  border: none !important;
+  color: var(--color-white);
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 .ce-section-title-container {
   transition: 0.2s ease-in;
 }
+.ce-section-title-container,
+#ce-options-drop-down {
+  margin-bottom: 1rem;
+}
 
-.ce-section-title-container:hover {
-  background-color: red !important;
+.ce-section-title-container:hover,
+#ce-options-drop-down:hover {
+  background-color: var(--color-blue-2) !important;
+  border-radius: 10px;
+}
+
+.ce-autocomplete-option {
+  background-color: var(--color-blue-2) !important;
+}
+
+.ce-autocomplete-option div {
+  background-color: var(--color-blue-2) !important;
+}
+
+.ce-input::placeholder {
+  color: var(--color-white-2);
+}
+
+.ce-danger-button {
+  background-color: rgb(131, 45, 45) !important;
+  color: var(--color-white) !important;
+  border: none !important;
+  transition: 0.3s ease;
+}
+
+.ce-danger-button:hover {
+  background-color: hsl(0, 49%, 32%) !important;
+  opacity: 1 !important;
 }
