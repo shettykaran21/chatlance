@@ -2,6 +2,7 @@ import { auth } from 'adapters/firebase';
 import { useHistory } from 'react-router';
 
 import styles from 'styles/Navbar.module.css';
+import { Button } from 'components/Button';
 
 const Navbar = () => {
   const history = useHistory();
@@ -12,11 +13,11 @@ const Navbar = () => {
   };
 
   return (
-    <div>
-      <div className={styles.logo}>Chatlance</div>
-      <div className={styles.logout} onClick={handleLogout}>
+    <div className={styles.navbar}>
+      <h2 className={styles.logo}>Chatlance</h2>
+      <Button className={styles.logout} onClick={handleLogout}>
         Logout
-      </div>
+      </Button>
     </div>
   );
 };

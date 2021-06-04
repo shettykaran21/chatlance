@@ -11,7 +11,7 @@ const Chats = () => {
     <div>
       <Navbar />
       <ChatEngine
-        height="100vh"
+        height="calc(100vh - 66px)"
         projectId={process.env.REACT_APP_CHAT_ENGINE_PROJECT_ID}
         userName="."
         userSecret="."

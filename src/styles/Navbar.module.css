@@ -1,0 +1,12 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(
+    to right bottom,
+    var(--color-primary-blue),
+    hsl(234, 24%, 35%)
+  );
+  color: var(--color-white);
+}
