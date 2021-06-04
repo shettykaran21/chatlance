@@ -3,7 +3,7 @@ import 'firebase/auth';
 
 export const auth = firebase
   .initializeApp({
-    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    apiKey: 'AIzaSyBTX8Xn6ybr2wL-aMnRIeR_33pgbwx5xbk',
     authDomain: 'chatlance-62de9.firebaseapp.com',
     projectId: 'chatlance-62de9',
     storageBucket: 'chatlance-62de9.appspot.com',
